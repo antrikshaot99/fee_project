@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <p>CLICK HERE</p>
+    <form>
+        <input type="button" onclick="sayhello()" value="add location">
+    </form>
+    
+        
+    
+    <script>
+        function sayhello(){
+            let location = prompt("where are you from");
+            if (location === 'punjab' || location === 'haryana' || location === 'chandigarh') {
+                let username = prompt("username : ");
+                let pass = prompt("password : ");
+                if(username === 'antriksh' && pass ==='1234' || username === 'tamanna' && pass === '2345' || username === 'divyam' && pass === '3456'){
+                    window.location.href = "map.html";
+            } else {
+                alert('Access Denied');
+            }
+        }
+    }
+        
+    </script>
+</body>
+</html>
